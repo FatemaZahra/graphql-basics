@@ -16,11 +16,12 @@ export const typeDefs = `#graphql
   }
   type Query {
       reviews: [Review]
+      review(id: ID!): Review
       games: [Game]
+      game(id: ID!): Game
       authors: [Author]
+      author(id: ID!): Author
   }
-   
-
 `;
 
 // scalar types we can use: int, float, string, boolean, ID --objects/serialize strings
