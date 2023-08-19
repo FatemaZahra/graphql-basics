@@ -26,3 +26,4 @@ export const typeDefs = `#graphql
 // scalar types we can use: int, float, string, boolean, ID --objects/serialize strings
 // !(exclamation mark)--> required field i.e. not allowed to be null
 // the elements inside the array can be nullable if there is no exclamation mark inside the array.
+// entrypoints using Query
