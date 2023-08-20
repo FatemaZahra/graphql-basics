@@ -26,6 +26,14 @@ export const typeDefs = `#graphql
       authors: [Author]
       author(id: ID!): Author
   }
+  type Mutation {
+      addGame(game: AddGameInput!): Game
+      deleteGame(id: ID!): [Game]
+  }
+  input AddGameInput {
+      title: String!
+      platform: [String!]!
+  }
 `;
 
 // scalar types we can use: int, float, string, boolean, ID --objects/serialize strings
